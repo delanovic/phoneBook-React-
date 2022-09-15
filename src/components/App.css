@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: linear-gradient(45deg, #6e5771, #f74991);
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  max-width: 490px;
+  margin: 1rem auto;
+  height: 95vh;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  top: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  border-bottom: 1px solid black;
+}
+
+.modal h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+
+
+
+  outline: none;
+
+  border-bottom: 1px dashed #f74991;
+
+}
+
+input[type=text]:focus {
+  border-bottom: 2px solid #f74991;
+}
+
+
+
+.submit {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border: 2px solid #f74991;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+
+}
+
+.submit:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.submit:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.addContact {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.list {
+  margin-top: 2rem;
+}
+
+.item {
+  border-bottom: 1px solid black;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+}
+
+.content .name {
+  margin-left: 1rem;
+}
+
+.content i {
+  margin-right: 1rem;
+}
+
+.item i {
+  cursor: pointer;
+  transition: all .5s;
+
+}
+
+.item i:hover {
+  color: #f74991
+}
